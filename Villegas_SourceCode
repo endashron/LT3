@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .menu {
+            background-color: #333;
+            padding: 10px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+        .logo {
+            width: 100px;
+            margin-top: 20px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+        }
+        body {
+  position: relative;
+  margin: 0;
+}
+
+.logo {
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 1;
+  left: 0;
+}
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="LastnameHomePageMidtermExam.html">HOME</a>
+        <a href="LastnameGalleryMidtermExam.html">GALLERY</a>
+        <a href="#">CONTACT</a>
+        <a href="#">REGISTER</a>
+    </div>
+
+    <img class="logo" src="logosurfing.jpg" alt="logo">
+    
+    <div class="content">
+        <h1>Welcome to Our Homepage</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ligula non nisl feugiat, a dapibus mi fermentum.</p>
+    </div>
+
+    <div class="footer">
+        <p>ALL RIGHTS RESERVED 2025</p>
+        <p>CREATED BY: STUDENT LASTNAME</p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .menu {
+            background-color: #333;
+            padding: 10px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        .slide {
+            display: none;
+        }
+        img {
+            width: 100%;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+        .prev { left: 0; }
+        .next { right: 0; }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+        }
+
+        body {
+  position: relative;
+  margin: 0;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 1;
+  left: 0;
+}
+    </style>
+</head>
+<body>
+
+   
+
+    <div class="menu">
+        <a href="LastnameHomePageMidtermExam.html">HOME</a>
+        <a href="LastnameGalleryMidtermExam.html">GALLERY</a>
+        <a href="#">CONTACT</a>
+        <a href="#">REGISTER</a>
+    </div>
+
+    <div class = "logo">
+        <img class="logo" src="logosurfing.jpg" alt="logo">
+
+
+    </div> 
+
+    <h1>Gallery</h1>
+    <p>Paddling.</p>
+
+    <div class="slideshow-container">
+        <button class="prev" onclick="prevSlide()">❮</button>
+
+        <div class="slide"><img src="paddling4.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="paddling5.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="surfing3.jpg" alt="Image 3"></div>
+        <div class="slide"><img src="SURFING123.jpg" alt="Image 4"></div>
+        <div class="slide"><img src="surfing1231.jpg" alt="Image 5"></div>
+
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+
+    <div class="footer">
+        <p>Paddling encompasses various watersports using paddles to propel and steer vessels, including canoeing, kayaking, and rafting, offering benefits like improved physical and mental health. </p>
+        <p>ALL RIGHTS RESERVED 2025</p>
+        <p>CREATED BY: VILLEGAS</p>
+    </div>
+
+    
+
+    <script>
+        let slideIndex = 0;
+        showSlide(slideIndex);
+
+        function showSlide(index) {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[index].style.display = "block";
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % 5;
+            showSlide(slideIndex);
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + 5) % 5;
+            showSlide(slideIndex);
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
